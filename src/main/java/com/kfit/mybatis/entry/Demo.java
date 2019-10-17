@@ -1,28 +1,16 @@
 package com.kfit.mybatis.entry;
 
+import com.oracle.webservices.internal.api.databinding.DatabindingMode;
+import lombok.Data;
+
 /**
  * @author byway
  */
+
+@Data
 public class Demo {
 
     private long id;
     private String name;
-
-    public long getId() {
-        return id;
-    }
-    public void setId(long id) {
-        this.id = id;
-    }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    @Override
-    public String toString() {
-        return "Demo [id=" + id + ", name=" + name + "]";
-    }
 
 }
