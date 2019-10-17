@@ -1,6 +1,5 @@
 package com.kfit.mybatis.entry;
 
-import com.oracle.webservices.internal.api.databinding.DatabindingMode;
 import lombok.Data;
 
 /**
