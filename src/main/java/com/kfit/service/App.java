@@ -31,10 +31,10 @@ public class App {
         //使用sqlSession直接查询
         //true 不开启事务，自动提交
         SqlSession sqlSession = sqlSessionFactory.openSession(true);
-        Demo demo = sqlSession.selectOne("com.kfit.mybatis.demo.mapper.DemoMapper.getById",1L);
+        Demo demo = sqlSession.selectOne("com.kfit.mybatis.mapper.DemoMapper.getById",1L);
         System.out.println(demo);
 
-        List<Demo> demos = sqlSession.selectList("com.kfit.mybatis.demo.mapper.DemoMapper.getAll");
+        List<Demo> demos = sqlSession.selectList("com.kfit.mybatis.mapper.DemoMapper.getAll");
         System.out.println(demos);
 
     }
