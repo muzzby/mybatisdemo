@@ -1,6 +1,6 @@
-package com.kfit.mybatis.mapper;
+package com.muzz.mybatis.mapper;
 
-import com.kfit.mybatis.entry.Demo;
+import com.muzz.mybatis.entry.Demo;
 
 import java.util.List;
 

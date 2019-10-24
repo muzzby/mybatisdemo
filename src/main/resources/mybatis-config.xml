@@ -10,7 +10,7 @@
     <!-- 为SQL映射配置文件的parameterType和resultType来设置别名。别名默认为首字母小写。 -->
     <!--typeAliases指定了entity的包路径-->
     <typeAliases>
-        <package name="com.kfit.mybatis"/>
+        <package name="com.muzz.mybatis"/>
     </typeAliases>
 
     <!-- environment 元素体中包含了事务管理和连接池的配置 -->

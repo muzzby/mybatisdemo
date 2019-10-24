@@ -1,8 +1,8 @@
-package com.kfit.service;
+package com.muzz.service;
 
 
 
-import com.kfit.mybatis.entry.Demo;
+import com.muzz.mybatis.entry.Demo;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * @author byway
  */
-public class App {
+public class Application {
     public static void main(String[] args) {
 
         String resource = "mybatis-config.xml";
@@ -31,10 +31,10 @@ public class App {
         //使用sqlSession直接查询
         //true 不开启事务，自动提交
         SqlSession sqlSession = sqlSessionFactory.openSession(true);
-        Demo demo = sqlSession.selectOne("com.kfit.mybatis.mapper.DemoMapper.getById",1L);
+        Demo demo = sqlSession.selectOne("com.muzz.mybatis.mapper.DemoMapper.getById",1L);
         System.out.println(demo);
 
-        List<Demo> demos = sqlSession.selectList("com.kfit.mybatis.mapper.DemoMapper.getAll");
+        List<Demo> demos = sqlSession.selectList("com.muzz.mybatis.mapper.DemoMapper.getAll");
         System.out.println(demos);
 
     }

@@ -1,4 +1,4 @@
-package com.kfit.mybatis.entry;
+package com.muzz.mybatis.entry;
 
 import lombok.Data;
 
